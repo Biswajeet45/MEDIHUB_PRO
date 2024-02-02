@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>medi-Hub</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                MEDI-<span>HUB</span>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+
+
+            </div>
+            <div class="icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-user"></i>
+                <i class="fa fa-bell"></i>
+                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <i class="fa fa-camera" id="camera"></i>
+            <h1>Find Your Best Medicines</h1>
+            <input type="text" name="" placeholder=" Lets Search here...">
+            <button><i class="fa fa-search"></i></button>
+        </section>
+
+    </header>
+    <section class="filter-gallery">
+        <div class="portfolio-menu">
+            <ul>
+                <li class="active" data-filter="*"> All</li>
+                <li data-filter=".Nature">Drugs</li>
+                <li data-filter=".Fashion">Baby-Product</li>
+                <li data-filter=".Cricket">Energy-Boosters</li>
+                <li data-filter=".Actor">Medicines</li>
+            </ul>
+        </div>
+        <div class="full-img" id="fullImgSquare">
+            <img src="image\tree-736885__480 (1).jpg" id="fullImg">
+            <span onclick="closeFullImg()">x</span>
+        </div>
+       
+<!--<div class="Energy-Boosters1">
+            <div class="star">
+                <img src="energydrink.jfif" alt="" onclick="openFullImg(this.src)">
+                <h3>Energy-Boosters</h3>
+                <div class="price">Rs 70.00</div>
+              </div>
+            <div class="energy2">
+                <img src="energy1.jpg" alt="" onclick="openFullImg(this.src)">
+                <h3>String</h3>
+                <div class="price">Rs 50.00</div>
+            </div>
+            <div class="rating">
+                <i class="rating"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+            </div>  
+        </div> !-->
+        <div class="card">
+            <img src="energydrink.jfif" alt="Energy" style="width:100%">
+            <h1>Energy-Boosters</h1>
+            <p class="price">RS 70.99</p>
+            <p><b>Sugar Free and good to go for your health.</b></p>
+            <span class="price">Rs 50.00</span><span class="actual-price">Rs 70.00</span>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+
+          
+ <!---      <div class="Baby-Product">
+            <div class="baby1">
+                <img src="baby.jpeg" alt="" onclick="openFullImg(this.src)">
+              </div>
+              <h3>Diappers</h3>
+            <div class="rating">
+                <i class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+            </div>  
+            <div class="price">Rs 50.00</div>
+        </div> -->
+    </section>
+   <!--<section class="member">
+        <div class="member-info">
+                <h1>Our<span>Data</span></h1>
+                <p>The members review</p>
+        </div>
+    </section> !-->
+   
+
+    <div class="CEO">
+      <img src="biswa1.png" alt="John" style="width:100%">
+      <h1>Biswajeet Sahu</h1>
+      <p class="title">CEO & Founder</p>
+      <p>GIET University</p>
+      <a href="#"><i class="fa fa-dribbble"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <p><button>Contact</button></p>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        
+
+        var fullImgSquare=document.getElementById("fullImgSquare");
+        var fullImg=document.getElementById("fullImg");
+
+        function openFullImg(picture){
+            fullImgSquare.style.display="flex";
+            fullImg.src=picture;
+        }
+        function closeFullImg(){
+            fullImgSquare.style.display="none";
+        }
+
+    </script>
+
+
+
+
+</body>    
+</html>
